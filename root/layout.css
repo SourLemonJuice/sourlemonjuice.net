@@ -45,3 +45,9 @@ body {
   margin: 0.7em 0;
   padding-left: 1.5em;
 }
+
+.in-pieces {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
