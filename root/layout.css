@@ -6,6 +6,7 @@
 
 body {
   margin: 0 1em;
+  background-color: #0e0e0e;
 }
 
 .content {
@@ -23,11 +24,11 @@ body {
 .footer {
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
   border-top: thin solid;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-item {
