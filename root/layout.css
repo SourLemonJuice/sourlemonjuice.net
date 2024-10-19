@@ -32,18 +32,24 @@ body {
 }
 
 .footer-item {
-  padding: 0.5em 1em;
+  margin: 0 1em;
+  flex: 1 1 content;
 }
 
-.footer-item-title {
+.footer-item h2 {
   font-size: large;
   font-weight: bold;
+  margin: 0.3em 0;
 }
 
 .footer-item ul {
-  list-style: "> ";
-  margin: 0.7em 0;
-  padding-left: 1.5em;
+  list-style: "";
+  margin: 0 0;
+  padding-left: 0;
+}
+
+.footer-item li {
+  margin: 0.6em 0;
 }
 
 .in-pieces {
