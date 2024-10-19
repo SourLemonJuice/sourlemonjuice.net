@@ -2,11 +2,26 @@
   color-scheme: light dark;
   font-family: sans-serif;
   font-size: medium;
+  color: #ffffff;
 }
 
 body {
   margin: 0 1em;
   background-color: #0e0e0e;
+}
+
+a:link {
+  color: #fe8e7f;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fe8e7f;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .content {
