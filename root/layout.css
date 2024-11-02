@@ -3,11 +3,11 @@
   font-family: sans-serif;
   font-size: medium;
   color: #ffffff;
+  background-color: #0e0e0e;
 }
 
 body {
   margin: 0 1em;
-  background-color: #0e0e0e;
 }
 
 a:link {
