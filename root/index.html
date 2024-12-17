@@ -40,17 +40,19 @@
           <h3>Connection test</h3>
           <p>
             HTTP/HTTPS server on connection.sourlemonjuice.net, connect to my cloud server.<br />
-            Essentially, pinging this server is possible. But using an HTTP/HTTPS request for URL /generate_204 will given
-            a more realistic result. It's much like
-            <a href="https://www.google.com/generate_204">https://www.google.com/generate_204</a>, which is used by a lot
-            of Android devices.
+            Essentially, pinging this server is possible. But using an HTTP/HTTPS request for URL /generate_204 will
+            given a more realistic result. It's much like
+            <a href="https://www.google.com/generate_204">https://www.google.com/generate_204</a>, which is used by a
+            lot of Android devices.
           </p>
           <ul>
             <li>/generate_204 -> return HTTP 204 No Content, preferred this.</li>
             <li>/generate_200 -> return HTTP 200 OK, only guarantees that the content is not empty.</li>
             <li>
               /NetworkManager -> return HTTP 200, and follow the
-              <a href="https://man.archlinux.org/man/extra/networkmanager/NetworkManager.conf.5.en#CONNECTIVITY_SECTION">
+              <a
+                href="https://man.archlinux.org/man/extra/networkmanager/NetworkManager.conf.5.en#CONNECTIVITY_SECTION"
+              >
                 NetworkManager.conf(5) #CONNECTIVITY_SECTION
               </a>
             </li>
@@ -64,44 +66,47 @@
           </p>
         </section>
       </main>
-      <footer class="footer">
-        <section class="footer-item">
-          <h2>Web Content</h2>
-          <ul>
-            <li><a href="https://drive.sourlemonjuice.net">File drive</a></li>
-            <li><a href="https://gitea.sourlemonjuice.net">Git hosting</a></li>
-            <li><a href="https://live.sourlemonjuice.net">Live stream(unstable)</a></li>
-            <li><a href="https://status.sourlemonjuice.net">Services status</a></li>
-          </ul>
-        </section>
-        <section class="footer-item">
-          <h2>Network Services</h2>
-          <ul>
-            <li><a href="https://goto.sourlemonjuice.net">Redirect</a></li>
-            <li><a href="https://connection.sourlemonjuice.net">Connection test</a></li>
-            <li>DNS recursive server</li>
-          </ul>
-        </section>
-        <section class="footer-item">
-          <h2>Contacts</h2>
-          <ul>
-            <li><a href="https://github.com/SourLemonJuice">GitHub</a></li>
-            <li><a href="https://sourlemonjuice.github.io/SourLemonJuice-blog/">SourLemonJuice-blog</a></li>
-            <li>
-              <a href="https://sourlemonjuice.github.io/SourLemonJuice-blog/about/contact">Other accounts(on blog)</a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-item">
-          <h2>See Also</h2>
-          <ul>
-            <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
-          </ul>
-        </section>
+      <footer class="footer-wrapper">
+        <nav class="footer-nav">
+          <section class="footer-item">
+            <h2>Web Content</h2>
+            <ul>
+              <li><a href="https://drive.sourlemonjuice.net">File drive</a></li>
+              <li><a href="https://gitea.sourlemonjuice.net">Git hosting</a></li>
+              <li><a href="https://live.sourlemonjuice.net">Live stream(unstable)</a></li>
+              <li><a href="https://status.sourlemonjuice.net">Services status</a></li>
+            </ul>
+          </section>
+          <section class="footer-item">
+            <h2>Network Services</h2>
+            <ul>
+              <li><a href="https://goto.sourlemonjuice.net">Redirect</a></li>
+              <li><a href="https://connection.sourlemonjuice.net">Connection test</a></li>
+              <li>DNS recursive server</li>
+            </ul>
+          </section>
+          <section class="footer-item">
+            <h2>Contacts</h2>
+            <ul>
+              <li><a href="https://github.com/SourLemonJuice">GitHub</a></li>
+              <li><a href="https://sourlemonjuice.github.io/SourLemonJuice-blog/">SourLemonJuice-blog</a></li>
+              <li>
+                <a href="https://sourlemonjuice.github.io/SourLemonJuice-blog/about/contact">Other accounts(on blog)</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-item">
+            <h2>See Also</h2>
+            <ul>
+              <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+            </ul>
+          </section>
+        </nav>
+        <p class="footer-sidenote">
+          frontend, strange... @_@<br />
+          site repository -> <a href="https://github.com/SourLemonJuice/sourlemonjuice.net">GitHub</a>
+        </p>
       </footer>
     </div>
-    <p class="in-pieces">
-      前端，怪诶 @_@ | Site source repository: <a href="https://github.com/SourLemonJuice/sourlemonjuice.net">GitHub</a>
-    </p>
   </body>
 </html>
