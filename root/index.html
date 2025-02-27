@@ -34,16 +34,18 @@
         <section class="side-sect">
           <h2>Services reference</h2>
           <h3>Redirect</h3>
+          <p>HTTPS server runs on <code>goto.sourlemonjuice.net</code> with regular port 443.</p>
           <p>
-            HTTPS server on <code>goto.sourlemonjuice.net</code>, powered with Cloudflare Worker and my
-            <a href="https://github.com/SourLemonJuice/Redirect-Worker">Redirect-Worker</a>. Like
-            <a href="https://aka.ms">aka.ms</a> or <a href="https://goo.gle">goo.gle</a>, it's just a regular short link
-            service. But where would I link to? The fourth dimension space, probably.
+            Like <a href="https://aka.ms">aka.ms</a> or <a href="https://goo.gle">goo.gle</a>, it's a regular short link
+            service. But where would I link to? The fourth dimension space, probably.<br />
+            Powered with Cloudflare Worker and my
+            <a href="https://github.com/SourLemonJuice/Redirect-Worker">Redirect-Worker</a>.
           </p>
           <h3>Connectivity test</h3>
+          <p>HTTP/HTTPS server runs on <code>connectivity.sourlemonjuice.net</code> with regular port 80/443.</p>
           <p>
-            HTTP/HTTPS server on <code>connectivity.sourlemonjuice.net</code>, connect to my cloud server.<br />
-            May be some system call them captive portal, like Android's <code>captive_portal_http_url</code>.<br />
+            This domain will always connect to my cloud server instead of CDN.<br />
+            Maybe some system calls them captive portal, like Android's <code>captive_portal_http_url</code>.<br />
             Note: before 2025-02-27, this domain was <code>connection.sourlemonjuice.net</code>
           </p>
           <p>
@@ -65,10 +67,9 @@
             </li>
           </ul>
           <h3>DNS recursive server</h3>
+          <p>DNS(UDP/TCP/DoT) recursive server runs on <code>dns.sourlemonjuice.net</code> with regular port 80/443.</p>
           <p>
-            Classic DNS(UDP/TCP) recursive server runs on port 53 of <code>dns.sourlemonjuice.net</code>, it's not a request
-            forward.<br />
-            As for the DoT/DoH/DoQ... Emm, there will be.<br />
+            It's not a request forward. As for the DoH/DoQ... Emm, there will be.<br />
             Powered with <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a>.
           </p>
         </section>
@@ -88,7 +89,7 @@
             <h2>Infrastructures</h2>
             <ul>
               <li>Redirect</li>
-              <li>Connection test</li>
+              <li>Connectivity test</li>
               <li>DNS recursive server</li>
             </ul>
           </section>
