@@ -24,6 +24,11 @@ a:hover {
   text-decoration: underline;
 }
 
+/* TODO */
+code {
+
+}
+
 .out-wrapper {
   min-height: 100vh;
   display: flex;

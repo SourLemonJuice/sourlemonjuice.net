@@ -35,24 +35,28 @@
           <h2>Services reference</h2>
           <h3>Redirect</h3>
           <p>
-            HTTPS server on goto.sourlemonjuice.net, powered with Cloudflare Worker and my
+            HTTPS server on <code>goto.sourlemonjuice.net</code>, powered with Cloudflare Worker and my
             <a href="https://github.com/SourLemonJuice/Redirect-Worker">Redirect-Worker</a>. Like
             <a href="https://aka.ms">aka.ms</a> or <a href="https://goo.gle">goo.gle</a>, it's just a regular short link
             service. But where would I link to? The fourth dimension space, probably.
           </p>
-          <h3>Connection test</h3>
+          <h3>Connectivity test</h3>
           <p>
-            HTTP/HTTPS server on connection.sourlemonjuice.net, connect to my cloud server.<br />
-            Essentially, pinging this server is possible. But using an HTTP/HTTPS request for URL /generate_204 will
-            given a more realistic result. It's much like
-            <a href="https://www.google.com/generate_204">www.google.com/generate_204</a>, which is used by a lot of
-            Android devices.
+            HTTP/HTTPS server on <code>connectivity.sourlemonjuice.net</code>, connect to my cloud server.<br />
+            May be some system call them captive portal, like Android's <code>captive_portal_http_url</code>.<br />
+            Note: before 2025-02-27, this domain was <code>connection.sourlemonjuice.net</code>
+          </p>
+          <p>
+            Essentially, pinging this server is possible. But using an HTTP/HTTPS request for URL
+            <code>/generate_204</code> will given a more realistic result. It's much like
+            <a href="https://connectivitycheck.gstatic.com/generate_204">connectivitycheck.gstatic.com/generate_204</a>,
+            which is used by a lot of Android devices.
           </p>
           <ul>
-            <li>/generate_204 -> return HTTP 204 No Content, preferred this.</li>
-            <li>/generate_200 -> return HTTP 200 OK, only guarantees that the content is not empty.</li>
+            <li><code>/generate_204</code> -> return HTTP 204 No Content, preferred this.</li>
+            <li><code>/generate_200</code> -> return HTTP 200 OK, only guarantees that the content is not empty.</li>
             <li>
-              /NetworkManager -> return HTTP 200, and follow the
+              <code>/NetworkManager</code> -> return HTTP 200, and follow the
               <a
                 href="https://man.archlinux.org/man/extra/networkmanager/NetworkManager.conf.5.en#CONNECTIVITY_SECTION"
               >
@@ -62,7 +66,7 @@
           </ul>
           <h3>DNS recursive server</h3>
           <p>
-            Classic DNS(UDP/TCP) recursive server runs on port 53 of dns.sourlemonjuice.net, it's not a request
+            Classic DNS(UDP/TCP) recursive server runs on port 53 of <code>dns.sourlemonjuice.net</code>, it's not a request
             forward.<br />
             As for the DoT/DoH/DoQ... Emm, there will be.<br />
             Powered with <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a>.
