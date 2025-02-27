@@ -30,6 +30,16 @@ code {
   color: #f0f0f0;
 }
 
+table {
+  border-collapse: collapse;
+  border: 2px solid #919191;
+}
+
+th, td {
+  padding: 6px;
+  border: 1px solid #919191;
+}
+
 .out-wrapper {
   min-height: 100vh;
   display: flex;

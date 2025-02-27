@@ -54,20 +54,44 @@
             <a href="https://connectivitycheck.gstatic.com/generate_204">connectivitycheck.gstatic.com/generate_204</a>,
             which is used by a lot of Android devices.
           </p>
-          <ul>
-            <li><code>/generate_204</code> -> return HTTP 204 No Content, preferred this.</li>
-            <li><code>/generate_200</code> -> return HTTP 200 OK, only guarantees that the content is not empty.</li>
-            <li>
-              <code>/NetworkManager</code> -> return HTTP 200, and follow the
-              <a
-                href="https://man.archlinux.org/man/extra/networkmanager/NetworkManager.conf.5.en#CONNECTIVITY_SECTION"
-              >
-                NetworkManager.conf(5) #CONNECTIVITY_SECTION
-              </a>
-            </li>
-          </ul>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">URI</th>
+                <th scope="col">Return status</th>
+                <th scope="col">Meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>/generate_204</code></td>
+                <td>204 No Content</td>
+                <td>the simplest one, preferred this</td>
+              </tr>
+              <tr>
+                <td><code>/generate_200</code></td>
+                <td>200 OK</td>
+                <td>only guarantees that the content is not empty</td>
+              </tr>
+              <tr>
+                <td><code>/NetworkManager</code></td>
+                <td>200 OK</td>
+                <td>
+                  follow the
+                  <a
+                    href="https://man.archlinux.org/man/extra/networkmanager/NetworkManager.conf.5.en#CONNECTIVITY_SECTION"
+                  >
+                    NetworkManager.conf(5) #CONNECTIVITY_SECTION
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <h3>DNS recursive server</h3>
-          <p>DNS(UDP/TCP/DoT) recursive server runs on <code>dns.sourlemonjuice.net</code> with regular port 80/443.</p>
+          <p>
+            DNS recursive server runs on <code>dns.sourlemonjuice.net</code> with regular port 80/443. Support
+            UDP/TCP/DoT.
+          </p>
           <p>
             It's not a request forward. As for the DoH/DoQ... Emm, there will be.<br />
             Powered with <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a>.
