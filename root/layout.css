@@ -60,11 +60,13 @@ th, td {
 .about-sect {
   min-width: 380px;
   width: 38%;
+  margin-inline: 4px;
 }
 
 .side-sect {
   min-width: 300px;
   width: 62%;
+  margin-inline: 4px;
 }
 
 @media screen and (max-width: 840px) {
