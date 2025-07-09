@@ -89,12 +89,13 @@
           </table>
           <h3>DNS recursive server</h3>
           <p>
-            DNS recursive server runs on <code>dns.sourlemonjuice.net</code> with regular port 80/443/853. Support Plain
-            DNS, DNS-over-HTTPS and DNS-over-TLS.
+            DNS recursive server runs on <code>dns.sourlemonjuice.net</code> with regular port 53/853/443, means it
+            supports Plain DNS, DNS-over-TLS and DNS-over-HTTPS.<br />
+            If you don't know that DoT runs on the TCP protocol, please use `cloudflare-dns.com` thanks.
           </p>
           <p>
             It's not just a request forward but a recursive server. As for the DNS-over-QUIC, that's not in the plan.<br />
-            We promise not to use your data and IP information for purposes other than querying and not to store any
+            We promise won't use your data and IP information for purposes other than querying and not to store any
             logs. However, we don't provide any form of guarantee and do not assume any legal liability for data
             leakage.<br />
             Powered with <a href="https://www.nlnetlabs.nl/projects/unbound/about/">Unbound</a>.
