@@ -1,43 +1,62 @@
 :root {
-  color-scheme: dark;
-  font-family: system-ui;
-  font-size: medium;
-  color: #ffffff;
-  background-color: #010409;
+  --text-font: "Noto Sans", system-ui, "sans";
+  --serif-font: "IBM Plex Serif", "Noto Serif", system-ui, "sans";
+  --monospace-font: "Monaspace Xenon", "JetBrains Mono NL", "JetBrains Mono", "monospace";
+
+  --text-color: #341d00;
+  --background-color: #fffbf6;
+  --code-background-color: #ffffff;
+  --link-base-color: #9b393a;
+  --link-visited-color: #9b393a;
+  --link-hover-color: #341d00;
+  --border-color: #8f8181;
+
+  color-scheme: light;
+  font-family: var(--text-font);
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 body {
   margin: 0 1em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif-font);
+}
+
 a:link {
-  color: #fe8e7f;
+  color: var(--link-base-color);
   text-decoration: none;
 }
 
 a:visited {
-  color: #fe8e7f;
+  color: var(--link-visited-color);
 }
 
 a:hover {
-  color: #f0f0f0;
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 
 code {
-  font-family: monospace;
-  background-color: #292929;
-  color: #f0f0f0;
+  font-family: var(--monospace-font);
+  font-size: 0.9em;
+  background-color: var(--code-background-color);
+  color: var(--text-color);
+  padding: 0.05em 0.2em;
+  border: 1px solid var(--border-color);
 }
 
 table {
   border-collapse: collapse;
-  border: 2px solid #919191;
+  border: 2px solid var(--border-color);
 }
 
 th, td {
   padding: 6px;
-  border: 1px solid #919191;
+  border: 1px solid var(--border-color);
 }
 
 .out-wrapper {
