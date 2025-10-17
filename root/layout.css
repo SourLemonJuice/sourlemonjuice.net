@@ -1,7 +1,7 @@
 :root {
-  --text-font: "Noto Sans", system-ui, "sans";
-  --serif-font: "IBM Plex Serif", "Noto Serif", system-ui, "sans";
-  --monospace-font: "Monaspace Xenon", "JetBrains Mono NL", "JetBrains Mono", "monospace";
+  --text-font: "Mona Sans", "Noto Sans SC", sans-serif;
+  --serif-font: "IBM Plex Serif", serif;
+  --monospace-font: "JetBrains Mono", monospace;
 
   --text-color: #341d00;
   --background-color: #fffbf6;
@@ -14,6 +14,7 @@
   color-scheme: light;
   font-family: var(--text-font);
   font-size: 16px;
+  font-weight: 500;
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -22,8 +23,18 @@ body {
   margin: 0 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--serif-font);
+  margin: 1em 0;
+}
+
+p {
+  margin: 1em 0;
 }
 
 a:link {
@@ -43,6 +54,7 @@ a:hover {
 code {
   font-family: var(--monospace-font);
   font-size: 0.9em;
+  font-weight: 400;
   background-color: var(--code-background-color);
   color: var(--text-color);
   padding: 0.05em 0.2em;
@@ -54,7 +66,8 @@ table {
   border: 2px solid var(--border-color);
 }
 
-th, td {
+th,
+td {
   padding: 6px;
   border: 1px solid var(--border-color);
 }
@@ -70,6 +83,7 @@ th, td {
 .content {
   max-width: 1440px;
   width: 100%;
+  margin-bottom: 1em;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -107,6 +121,7 @@ th, td {
 .footer-wrapper {
   max-width: 1440px;
   width: 100%;
+  margin-bottom: 1em;
   border-top: thin solid;
   display: flex;
   flex-direction: row;
@@ -146,6 +161,7 @@ th, td {
 .footer-sidenote {
   margin: 0;
   text-align: right;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 740px) {
