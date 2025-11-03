@@ -1,7 +1,7 @@
 :root {
-  --text-font: "Mona Sans", "Noto Sans SC", sans-serif;
+  --text-font: "Noto Sans SC", system-ui, sans-serif;
   --serif-font: "IBM Plex Serif", serif;
-  --monospace-font: "JetBrains Mono", monospace;
+  --monospace-font: monospace;
 
   --text-color: #341d00;
   --background-color: #fffbf6;
