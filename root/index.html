@@ -43,14 +43,6 @@
         </section>
         <section class="side-sect">
           <h2>Services Reference</h2>
-          <h3>Redirect</h3>
-          <p>HTTPS server runs on <code>goto.sourlemonjuice.net</code> with regular port 443.</p>
-          <p>
-            Like <a href="https://aka.ms">aka.ms</a> or <a href="https://goo.gle">goo.gle</a>, it's a regular short link
-            service. But where would I link to? The fourth dimension space, probably.<br />
-            Powered by Cloudflare Worker with my
-            <a href="https://github.com/SourLemonJuice/Redirect-Worker">Redirect-Worker</a>.
-          </p>
           <h3>Connectivity Test</h3>
           <p>HTTP/HTTPS server runs on <code>connectivity.sourlemonjuice.net</code> with regular port 80/443.</p>
           <p>
@@ -97,6 +89,19 @@
               </tr>
             </tbody>
           </table>
+          <h3>Redirect</h3>
+          <p>HTTPS server runs on <code>goto.sourlemonjuice.net</code> with regular port 443.</p>
+          <p>
+            Like <a href="https://aka.ms">aka.ms</a> or <a href="https://goo.gle">goo.gle</a>, it's a regular short link
+            service. But where would I link to? The fourth dimension space, probably.<br />
+            Powered by Cloudflare Worker with my
+            <a href="https://github.com/SourLemonJuice/Redirect-Worker">Redirect-Worker</a>.
+          </p>
+          <h3>DNS over HTTPS Forward [TBD]</h3>
+          <p>
+            Cloudflare Worker runs on <code>TBD</code> with regular port 443, use for DNS over HTTPS forwarding.<br>
+            The upstream is Cloudflare DoH.
+          </p>
           <h3>DNS Recursive Server [Deprecate]</h3>
           <p>
             DNS recursive server runs on <code>dns.sourlemonjuice.net</code> with regular port 53/853/443, means it
