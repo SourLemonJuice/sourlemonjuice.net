@@ -97,12 +97,16 @@
             Powered by Cloudflare Worker with my
             <a href="https://github.com/SourLemonJuice/Redirect-Worker">Redirect-Worker</a>.
           </p>
-          <h3>DNS over HTTPS Forward [TBD]</h3>
+          <h3>DNS over HTTPS Forwarding [Experimental]</h3>
           <p>
-            Cloudflare Worker runs on <code>TBD</code> with regular port 443, use for DNS over HTTPS forwarding.<br>
-            The upstream is Cloudflare DoH.
+            Cloudflare Worker hosted on: <code>https://dns-next.sourlemonjuice.net</code><br />
+            The upstream is Cloudflare DNS(HTTPS).
           </p>
-          <h3>DNS Recursive Server [Deprecate]</h3>
+          <p>
+            Your request will be logged via Cloudflare Worker Observability. We will disable logging of sensitive
+            information after the experimental phase.
+          </p>
+          <h3>DNS Recursive Server [Discontinued]</h3>
           <p>
             DNS recursive server runs on <code>dns.sourlemonjuice.net</code> with regular port 53/853/443, means it
             supports Plain DNS, DNS-over-TLS and DNS-over-HTTPS.<br />
@@ -122,21 +126,18 @@
           <section class="footer-item">
             <h2>Web Services</h2>
             <ul>
-              <li><a href="https://git.sourlemonjuice.net">Gitea(Git Host)</a></li>
-              <li><a href="https://download.sourlemonjuice.net">File Download</a></li>
+              <li><a href="https://git.sourlemonjuice.net">Gitea(Git)</a></li>
               <li><a href="https://status.sourlemonjuice.net">Services Status</a></li>
             </ul>
           </section>
           <section class="footer-item">
             <h2>Infrastructures</h2>
             <ul>
-              <li>Redirect</li>
-              <li>Connectivity Test</li>
-              <li>DNS Recursive Server</li>
+              <li>↑Above↑</li>
             </ul>
           </section>
           <section class="footer-item">
-            <h2>Contacts</h2>
+            <h2>About Me</h2>
             <ul>
               <li><a href="https://github.com/SourLemonJuice">GitHub</a></li>
               <li><a href="https://sourlemonjuice.github.io/SourLemonJuice-blog/">SourLemonJuice-blog</a></li>
